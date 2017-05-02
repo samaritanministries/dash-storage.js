@@ -1,4 +1,4 @@
-class DashStorage{
+class DashStorage {
 
   constructor(storageEngine){
     this.storageEngine = storageEngine || localStorage
@@ -11,6 +11,10 @@ class DashStorage{
   get(key){
     var value = this.storageEngine.getItem(key)
     return JSON.parse(value)
+  }
+
+  remove(key){
+    this.storageEngine.removeItem(key)
   }
 }
 export default DashStorage

@@ -75,4 +75,13 @@ describe("LocalStorage", ()=>{
     expect(dashStorage.get("foo")).toEqual(myArrayOfObjects)
   })
 
+  it("can remove by key",()=>{
+    var dashStorage = new DashStorage()
+    dashStorage.set("foo", "bar")
+
+    dashStorage.remove("foo")
+
+    expect(dashStorage.get("foo")).toBe(null)
+  })
+
 })

@@ -1,2 +1,2 @@
 console.log(__dirname)
-import "src/dash_storage";
+import "src/dash_storage"
