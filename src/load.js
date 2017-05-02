@@ -1,3 +1,3 @@
-import DashStorage from "src/dash_storage"
+import Storage from "src/storage"
 
-window.DashStorage = DashStorage
+window.Dash.Storage = Storage

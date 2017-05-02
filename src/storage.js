@@ -1,4 +1,4 @@
-class DashStorage{
+class Storage{
 
   constructor(storageEngine){
     this.storageEngine = storageEngine || localStorage
@@ -17,4 +17,4 @@ class DashStorage{
     this.storageEngine.removeItem(key)
   }
 }
-export default DashStorage
+export default Storage

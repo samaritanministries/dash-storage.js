@@ -1,6 +1,6 @@
-import DashStorage from "src/dash_storage"
+import Storage from "src/storage"
 
-describe("DashStorage", ()=>{
+describe("Storage", ()=>{
 
   beforeEach(()=>{
     localStorage.clear()
@@ -8,7 +8,7 @@ describe("DashStorage", ()=>{
   })
 
   it("uses localStorage by default", ()=>{
-    var dashStorage = new DashStorage()
+    var dashStorage = new Storage()
     var myString = "test123"
 
     dashStorage.set("foo", myString)
@@ -18,7 +18,7 @@ describe("DashStorage", ()=>{
   })
 
   it("can alternatively use sessionStorage", ()=>{
-    var dashStorage = new DashStorage(sessionStorage)
+    var dashStorage = new Storage(sessionStorage)
     var myString = "test123"
 
     dashStorage.set("foo", myString)
@@ -28,7 +28,7 @@ describe("DashStorage", ()=>{
   })
 
   it("can store a string", ()=>{
-    var dashStorage = new DashStorage(sessionStorage)
+    var dashStorage = new Storage(sessionStorage)
     var myString = "test123"
 
     dashStorage.set("foo", myString)
@@ -37,7 +37,7 @@ describe("DashStorage", ()=>{
   })
 
   it("can store an object", ()=>{
-    var dashStorage = new DashStorage(sessionStorage)
+    var dashStorage = new Storage(sessionStorage)
     var myObject = {test: "bar"}
 
     dashStorage.set("foo", myObject)
@@ -46,7 +46,7 @@ describe("DashStorage", ()=>{
   })
 
   it("can store an array", ()=>{
-    var dashStorage = new DashStorage(sessionStorage)
+    var dashStorage = new Storage(sessionStorage)
     var myArray = ["bar1", "bar2", "bar3"]
 
     dashStorage.set("foo", myArray)
@@ -55,7 +55,7 @@ describe("DashStorage", ()=>{
   })
 
   it("can store an object with an array", ()=>{
-    var dashStorage = new DashStorage(sessionStorage)
+    var dashStorage = new Storage(sessionStorage)
     var myObjectWithArray = {test: ["bar1", "bar2", "bar3"]}
 
     dashStorage.set("foo", myObjectWithArray)
@@ -64,7 +64,7 @@ describe("DashStorage", ()=>{
   })
 
   it("can store an array of objects", ()=>{
-    var dashStorage = new DashStorage(sessionStorage)
+    var dashStorage = new Storage(sessionStorage)
     var myArrayOfObjects = [
       {foo:"bar"},
       {foo2:"bar"}
@@ -76,7 +76,7 @@ describe("DashStorage", ()=>{
   })
 
   it("can remove by key",()=>{
-    var dashStorage = new DashStorage()
+    var dashStorage = new Storage()
     dashStorage.set("foo", "bar")
 
     dashStorage.remove("foo")
