@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>DashFrontendBoilerplateApp</id>
+        <title>DashFrontendBoilerplateApp</title>
+        <version>$version$</version>
+        <authors>Samaritan Ministries</authors>
+        <description>DashFrontendBoilerplateApp</description>
+        <licenseUrl>http://samaritanministries.org</licenseUrl>
+        <projectUrl>http://samaritanministries.org</projectUrl>
+    </metadata>
+    <files>
+        <file src="dist\application.js" target="" />
+        <file src="dist\index.html" target="" />
+        <file src="bower_components\dashing\**\*.*" target="dashing" />
+    </files>
+</package>

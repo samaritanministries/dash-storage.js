@@ -1,0 +1,39 @@
+{
+  "devDependencies": {
+    "babel-core": "~6.17.0",
+    "babel-loader": "~6.2.5",
+    "babel-preset-es2015": "~6.16.0",
+    "css-loader": "~0.25.0",
+    "ejs-compiled-loader": "~1.1.0",
+    "file-loader": "~0.9.0",
+    "html-webpack-plugin": "~2.22.0",
+    "jasmine-core": "~2.5.2",
+    "karma": "~1.3.0",
+    "karma-jasmine": "~1.0.2",
+    "karma-phantomjs-launcher": "~1.0.2",
+    "karma-spec-reporter": "0.0.26",
+    "karma-tap-reporter": "0.0.6",
+    "karma-webpack": "~1.8.0",
+    "node-sass": "~3.10.1",
+    "phantomjs-prebuilt": "~2.1.13",
+    "sass-loader": "~4.0.2",
+    "script-loader": "~0.7.0",
+    "sinon": "~1.17.7",
+    "style-loader": "~0.13.1",
+    "url-loader": "~0.5.7",
+    "wallaby-webpack": "0.0.26",
+    "webpack": "~1.13.2",
+    "webpack-dev-server": "~1.16.2",
+    "webpack-uglify-js-plugin": "~1.1.9"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --inline --host 0.0.0.0 --port 9003 --https --define ENVIRONMENT=\"'local'\"",
+    "webpack:sandbox": "webpack --config webpack.config.js --progress --colors --show-details --define ENVIRONMENT=\"'sandbox'\"",
+    "karma": "karma start karma.config.js",
+    "test": "karma start --single-run --no-auto-watch karma.config.js"
+  },
+  "dependencies": {
+    "hogan.js": "~3.0.2",
+    "mustache-loader": "~0.4.0"
+  }
+}
