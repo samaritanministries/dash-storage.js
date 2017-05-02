@@ -1,6 +1,6 @@
 import DashStorage from "src/dash_storage"
 
-describe("LocalStorage", ()=>{
+describe("DashStorage", ()=>{
 
   beforeEach(()=>{
     localStorage.clear()

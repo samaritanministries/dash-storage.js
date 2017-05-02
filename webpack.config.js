@@ -41,7 +41,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: "application.js",
+    filename: "dash-storage.js",
     path: path.resolve(__dirname, "dist")
   },
   resolve: {

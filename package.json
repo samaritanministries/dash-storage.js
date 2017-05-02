@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --inline --host 0.0.0.0 --port 9003 --https --define ENVIRONMENT=\"'local'\"",
-    "webpack:sandbox": "webpack --config webpack.config.js --progress --colors --show-details --define ENVIRONMENT=\"'sandbox'\"",
+    "webpack": "webpack --config webpack.config.js",
     "karma": "karma start karma.config.js",
     "test": "karma start --single-run --no-auto-watch karma.config.js"
   },

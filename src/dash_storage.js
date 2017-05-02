@@ -1,4 +1,4 @@
-class DashStorage {
+class DashStorage{
 
   constructor(storageEngine){
     this.storageEngine = storageEngine || localStorage

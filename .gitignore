@@ -1,8 +1,6 @@
-dist/*
 node_modules/*
-*.swp
-*.swo
-npm-debug.log
+*.log
 bower_components/*
 tests.tap
-.tmp/*
+.tmp
+.idea
