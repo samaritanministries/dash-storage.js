@@ -8,7 +8,7 @@ const PROJECT_ROOT = path.resolve(__dirname);
 module.exports = {
   devtool: "source-map",
   entry: {
-    app: "./src/application.js"
+    "dist/dash-storage.js": "./src/load.js"
   },
   module: {
     loaders: [
