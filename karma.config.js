@@ -29,7 +29,7 @@ module.exports = function (config) {
     browsers: [ "PhantomJS" ],
     preprocessors: {
       "test/test_index.js": ["webpack"],
-      "src/**/*.js": ["webpack"]
+      "src/*.js": ["webpack"]
     },
     logLevel: config.LOG_INFO,
     reporters: ["spec", "tap"],

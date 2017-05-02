@@ -29,6 +29,7 @@ module.exports = function (wallaby) {
     ],
     resolve: {
       alias: {
+        "src": path.join(wallaby.projectCacheDir, "src"),
         "fakes": path.join(wallaby.projectCacheDir, "test", "fakes")
       },
       modulesDirectories: [path.join(PROJECT_ROOT, "node_modules"), path.join(PROJECT_ROOT, "bower_components")]

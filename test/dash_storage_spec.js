@@ -1,4 +1,4 @@
-import DashStorage from "dash_storage"
+import DashStorage from "src/dash_storage"
 
 describe("LocalStorage", ()=>{
 
